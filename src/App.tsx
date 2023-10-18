@@ -1,10 +1,18 @@
+// NavBar.js or NavBar.tsx
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import NotFound from "./components/NotFound";
+
 const App = () => {
   return (
-    <div>
-      {/* TODO understand why text-lg does this not work tw config may be bad*/}
-      <h1 className="font-bold text-blue-500 text-lg">Hello</h1>
-      <img src="/logo.png" alt="logo" />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<NotFound />}>
+          <Route index element={<NotFound />} />
+          <Route path="home" element={<NotFound />} />
+          <Route path="*" element={<NotFound />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 };
 

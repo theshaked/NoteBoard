@@ -27,8 +27,8 @@ Before you begin, ensure you have the following software installed:
 ### Installation
 
 ```sh
-   git clone https://github.com/theshaked/note-board-app.git
-   cd note-board-app
+   git clone https://github.com/theshaked/NoteBoard.git
+   cd NoteBoard
    npm install
 ```
 
