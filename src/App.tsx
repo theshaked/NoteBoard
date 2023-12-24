@@ -4,6 +4,7 @@ import NavBar from "./components/NavBar";
 import ModalWindow from "./components/ModalWindow";
 import Button from "./components/Button";
 import { useState } from "react";
+import Board from "./components/Board/Board";
 
 const Home = () => <div>Home Page</div>;
 const About = () => <div>About Page</div>;
@@ -30,6 +31,7 @@ const App = () => {
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="board" element={<Board />} />
           <Route path="about" element={<About />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
